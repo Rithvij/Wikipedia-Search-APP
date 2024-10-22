@@ -1,7 +1,7 @@
 # Wikipedia-Search-Application
 This Angular application allows to search Wikipedia articles and view results dynamically. It features modular components and utilizes a dedicated service for API requests. Key functionalities include real-time search updates, XSS protection for safe HTML rendering, and a user-friendly interface for efficient information retrieval from Wikipedia.
 
-![Wiki](public\Wikipedia%20Search%20Preview)
+![Wiki](public/Wikipedia%20Search%20Preview.png)
 
 ## Overview
 This Angular application allows users to search for articles on Wikipedia, displaying relevant results dynamically. The application is built using modular components and services, ensuring maintainability and reusability.
