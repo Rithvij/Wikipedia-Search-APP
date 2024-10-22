@@ -1,0 +1,24 @@
+<div [innerHTML]="xss"></div>
+
+<table class="table is-striped">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Word Count</th>
+            <th>Snippet</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let page of pages;let i=index">
+            <td>
+                <!--open it in new tab target=blank-->
+                <a target="_blank" [href]=" 'https://en.wikipedia.org?curid='+page.pageid ">{{page.title}}</a>
+            </td>
+            <td>{{page.wordcount}}</td>
+            <!--Snippet has some html which
+            needs to be considered as html elements
+            to display th text correctly-->
+            <td [innerHTML]="page.snippet"></td>
+        </tr>
+    </tbody>
+</table>

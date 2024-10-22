@@ -1,0 +1,11 @@
+<!-- when we wrap the input event with the form event
+ and click enter, it will automatically trigger 
+ submit event - this is browser working-->
+ <div class="box">
+<form (submit)="onFormSubmit($event)">
+    <input 
+    placeholder="Enter Search term"
+    class="input"
+    type="text" (input)="onInput($event)" />
+</form>
+</div>
